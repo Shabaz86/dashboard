@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dynamic Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Top 10 Brokers Performance</h1>
+    <!-- Added file input element -->
+    <input type="file" id="fileInput" accept=".xlsx, .xls" />
+    <div id="brokersTable"></div>
+    <div id="chartsContainer">
+      <canvas id="gwpChart"></canvas>
+      <canvas id="businessClassChart"></canvas>
+    </div>
+  </div>
+  <div class="chat-container">
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-messages" id="chatMessages"></div>
+    </div>
+    <input type="text" id="chatInput" class="chat-input" placeholder="Type your message...">
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Include the SheetJS library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
